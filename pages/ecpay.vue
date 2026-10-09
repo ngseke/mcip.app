@@ -81,7 +81,7 @@ const notes = [
             <section class="row align-items-center">
               <div class="col-12 col-md-7">
                 <h2>與綠界科技合作的線上報名繳費</h2>
-                <p class="lead">
+                <p>
                   {{ description }}
                 </p>
               </div>
@@ -156,7 +156,6 @@ section
     border-bottom: solid 1px #ddd
 
 h2
-  font-size: 1.75rem
   font-weight: 700
   margin-bottom: .75rem
 
@@ -166,15 +165,10 @@ h3
   margin-bottom: .5rem
 
 p
-  color: #555
   margin-bottom: 0
 
-.lead
-  font-size: 1rem
-  line-height: 1.9
-
 .subtitle
-  color: #888
+  color: rgba($black, .5)
   margin-bottom: 1.5rem
 
 .fee-card
@@ -209,7 +203,6 @@ p
   p
     color: rgba(white, .8)
     font-size: .85rem
-    line-height: 1.8
     border-top: solid 1px rgba(white, .2)
     padding-top: 1rem
     margin-top: 1rem
@@ -224,7 +217,7 @@ p
 
 .step
   background-color: white
-  border: solid 1px #e5e5e5
+  border: solid 1px #ddd
   border-radius: .75rem
   padding: 1.25rem
   .head
@@ -236,20 +229,19 @@ p
     font-size: .8rem
     font-weight: 700
     letter-spacing: 1px
-    color: $primary
+    color: $secondary3
   .tag
     font-size: .75rem
-    color: #666
-    background-color: #f0f0f0
+    color: rgba($black, .6)
+    background-color: rgba($black, .05)
     border-radius: 100rem
     padding: .15rem .6rem
   p
     font-size: .9rem
-    line-height: 1.8
 
 .note-card
   background-color: white
-  border: solid 1px #e5e5e5
+  border: solid 1px #ddd
   border-radius: .75rem
   padding: 1.5rem
   height: 100%
@@ -257,16 +249,14 @@ p
     margin-bottom: .75rem
   .label
     font-size: .85rem
-    color: #888
+    color: rgba($black, .5)
     margin-bottom: .5rem
   p
     font-size: .9rem
-    line-height: 1.8
 
 .more
   margin-top: 1.5rem
   font-size: .9rem
   a
-    color: $primary
     +floating-link
 </style>
