@@ -23,4 +23,6 @@ header
     background-image: url('~/assets/img/background/news.jpg')
   &.faq
     background-image: url('~/assets/img/background/faq.jpg')
+  &.ecpay
+    background-image: url('~/assets/img/background/ecpay.jpg')
 </style>

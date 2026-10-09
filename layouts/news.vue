@@ -2,6 +2,7 @@
 const navbarItems = [
   { name: 'News', to: '/news', active: true },
   { name: 'FAQ', to: '/faq' },
+  { name: 'Payment', to: '/ecpay' },
 ]
 </script>
 

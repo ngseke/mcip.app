@@ -7,6 +7,7 @@ import { fetchFaqs } from '~/utils/static-data'
 const navbar = [
   { name: 'News', to: '/news' },
   { name: 'FAQ', to: '/faq', active: true },
+  { name: 'Payment', to: '/ecpay' },
 ]
 
 const { data: faqs } = await useAsyncData(fetchFaqs)

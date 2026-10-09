@@ -16,6 +16,7 @@ const props = withDefaults(defineProps<{
   items: () => [
     { name: 'News', to: '/news' },
     { name: 'FAQ', to: '/faq' },
+    { name: 'Payment', to: '/ecpay' },
   ],
 })
 

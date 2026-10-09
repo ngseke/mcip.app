@@ -12,6 +12,7 @@ const list: Item[][] = [
     { name: '首頁', to: '/' },
     { name: '最新消息', to: '/news' },
     { name: '常見問題', to: '/faq' },
+    { name: '金流服務說明', to: '/ecpay' },
   ],
   [
     {
