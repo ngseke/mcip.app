@@ -74,14 +74,14 @@ const list: Item[][] = [
 
 <style scoped lang="sass">
 footer
-  $border: 1px solid lighten(grey, 40%)
+  $border: 1px solid color.adjust(grey, $lightness: 40%)
   color: grey
   font-size: .85rem
   a
-    color: lighten(grey, 10%)
+    color: color.adjust(grey, $lightness: 10%)
     font-weight: normal
     &:hover
-      color: lighten(grey, 20%)
+      color: color.adjust(grey, $lightness: 20%)
   .block
     display: flex
     flex-wrap: wrap

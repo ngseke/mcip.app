@@ -20,7 +20,7 @@ if (error.value) {
 }
 
 const requestHeaderHost = useRequestHeader('host')
-const host = process.server ? requestHeaderHost : window.location.host
+const host = import.meta.server ? requestHeaderHost : window.location.host
 
 useHead(() => {
   if (!data.value) return {}
@@ -33,12 +33,12 @@ useHead(() => {
       ? `${titleChunk} - 樂台計畫`
       : '樂台計畫: 大專院校音樂賽事平台',
     meta: [
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: 'og:description', content: description },
-      { hid: 'og:type', property: 'og:type', content: 'article' },
-      { hid: 'og:url', property: 'og:url', content: `https://${host}${route.path}` },
-      { hid: 'og:image', property: 'og:image', content: image },
-      { hid: 'og:title', property: 'og:title', content: `${title}` },
+      { name: 'description', content: description },
+      { property: 'og:description', content: description },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: `https://${host}${route.path}` },
+      { property: 'og:image', content: image },
+      { property: 'og:title', content: `${title}` },
     ],
     link: [
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css' },

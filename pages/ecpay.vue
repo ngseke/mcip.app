@@ -10,9 +10,9 @@ const description = '樂台計畫與綠界科技（ECPay）合作，為大專院
 useHead({
   title: '金流服務說明',
   meta: [
-    { hid: 'description', name: 'description', content: description },
-    { hid: 'og:description', property: 'og:description', content: description },
-    { hid: 'og:title', property: 'og:title', content: '金流服務說明 - 樂台計畫' },
+    { name: 'description', content: description },
+    { property: 'og:description', content: description },
+    { property: 'og:title', content: '金流服務說明 - 樂台計畫' },
   ],
 })
 

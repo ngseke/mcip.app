@@ -65,7 +65,7 @@ nav.article-sidebar
     border-left: solid transparent 1px
     transition: color .2s
     &:hover
-      color: darken($link-color, 10%)
+      color: color.adjust($link-color, $lightness: -10%)
       border-left: solid $link-color 1px
     &.active
       font-weight: bold

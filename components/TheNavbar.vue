@@ -23,7 +23,7 @@ const props = withDefaults(defineProps<{
 const top = ref(0)
 const isShow = ref(false)
 const isFixed = ref(false)
-const isLocked = useScrollLock(process.client ? document.body : null)
+const isLocked = useScrollLock(import.meta.client ? document.body : null)
 
 syncRef(isShow, isLocked)
 

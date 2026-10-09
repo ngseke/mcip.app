@@ -15,7 +15,7 @@ const { data: faqs } = await useAsyncData(fetchFaqs)
 useHead({
   title: '常見問題',
   meta: [
-    { hid: 'og:title', property: 'og:title', content: '常見問題 - 樂台計畫' },
+    { property: 'og:title', content: '常見問題 - 樂台計畫' },
   ],
 })
 
