@@ -23,7 +23,11 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         sass: {
           loadPaths: ['.'],
+          quietDeps: true,
+          // Bootstrap 4 only supports @import; migrate to @use after upgrading to Bootstrap 5
+          silenceDeprecations: ['import'],
           additionalData: `
+            @use 'sass:color'
             @import './assets/sass/style-resources/_variables.sass'
             @import './assets/sass/style-resources/_functions.sass'
             @import './assets/sass/style-resources/_custom.sass'

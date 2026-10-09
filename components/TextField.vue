@@ -98,7 +98,7 @@ label.form__label
   display: block
   transition: transform .2s, font-size .2s, color .2s
   font-size: $font-size-sm
-  color: darken($gray, 10%)
+  color: color.adjust($gray, $lightness: -10%)
   z-index: 1
   pointer-events: none
   transform: translateY(0)

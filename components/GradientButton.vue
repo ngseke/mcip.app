@@ -57,9 +57,9 @@ defineEmits<{
     background-image: $btn-secondary-gradient
   &.line
     $base-color: #5AC363
-    background-image: linear-gradient(-225deg, $base-color 0%, darken($base-color, 10%) 100%)
+    background-image: linear-gradient(-225deg, $base-color 0%, color.adjust($base-color, $lightness: -10%) 100%)
     &, &:hover
-      color: darken($base-color, 40%)
+      color: color.adjust($base-color, $lightness: -40%)
       color: white
   &.submit
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)
