@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         sass: {
+          loadPaths: ['.'],
           additionalData: `
             @import './assets/sass/style-resources/_variables.sass'
             @import './assets/sass/style-resources/_functions.sass'
@@ -47,12 +48,12 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1' },
         { name: 'author', content: 'ngseke' },
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'og:description', property: 'og:description', content: description },
-        { hid: 'og:image', property: 'og:image', content: '/og-image.png' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:title', property: 'og:title', content: '樂台計畫: 大專院校音樂賽事平台' },
-        { hid: 'og:locale', property: 'og:locale', content: 'zh_tw' },
+        { name: 'description', content: description },
+        { property: 'og:description', content: description },
+        { property: 'og:image', content: '/og-image.png' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: '樂台計畫: 大專院校音樂賽事平台' },
+        { property: 'og:locale', content: 'zh_tw' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },

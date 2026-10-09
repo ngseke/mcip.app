@@ -9,9 +9,9 @@ useHead({
   title,
   meta: [
     { 'http-equiv': 'refresh', content: '0;url=https://line.me/R/ti/p/11FZvoRuwx' },
-    { hid: 'description', name: 'description', content: description },
-    { hid: 'og:title', property: 'og:title', content: title },
-    { hid: 'og:description', property: 'og:description', content: description },
+    { name: 'description', content: description },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
   ],
 })
 </script>

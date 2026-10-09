@@ -9,9 +9,9 @@ const description = '絕不錯過的第一手最新消息、音樂賽事快報�
 useHead({
   title: '最新消息',
   meta: [
-    { hid: 'description', name: 'description', content: description },
-    { hid: 'og:description', property: 'og:description', content: description },
-    { hid: 'og:title', property: 'og:title', content: '最新消息 - 樂台計畫' },
+    { name: 'description', content: description },
+    { property: 'og:description', content: description },
+    { property: 'og:title', content: '最新消息 - 樂台計畫' },
   ],
 })
 
